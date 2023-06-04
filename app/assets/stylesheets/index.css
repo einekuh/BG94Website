@@ -1,0 +1,42 @@
+.wrapper{
+    width:100%;
+    display:grid;
+    grid-template-areas: "left  headline headline headline right"
+                         "left team1 team1 team1 right"
+                         "left team2 team2 team2 right"
+                         "left team3 team3 team3 right"
+                         "left team4 team4 team4 right"
+                         "left team5 team5 team5 right"
+                         "left team6 team6 team6 right";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 500px 500px 500px 500px 500px;
+    gap: 10px;
+    
+}
+.headline{
+     grid-area: headline;   
+}
+.team1{
+     grid-area: team1;   
+     background-color: grey;
+}
+.team2{
+     grid-area: team2;   
+      background-color: grey;
+}
+.team3{
+     grid-area: team3; 
+      background-color: grey;  
+}
+.team4{
+     grid-area: team4;  
+      background-color: grey; 
+}
+.team5{
+     grid-area: team5;
+      background-color: grey;   
+}
+.team6{
+     grid-area: team6;   
+      background-color: grey;
+}

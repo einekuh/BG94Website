@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>BGWebsite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BG-94-Schwedt</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'header', "data-turbo-track": "reload"  %>
+    <%= stylesheet_link_tag 'footer', "data-turbo-track": "reload"  %>
+    <%= stylesheet_link_tag 'index', "data-turbo-track": "reload"  %>
+    <%= stylesheet_link_tag 'teams', "data-turbo-track": "reload"  %>
     <%= javascript_importmap_tags %>
+    
   </head>
-
   <body>
-    <%= yield %>
+    <div class="grid-container"> 
+      <div class="header"> <%= render "home/header" %> </div>
+      <div class="main"> <%= yield %> </div>
+      <div class="footer"> <%= render "home/footer" %> </div>
+    </div>
+ 
+
   </body>
 </html>
