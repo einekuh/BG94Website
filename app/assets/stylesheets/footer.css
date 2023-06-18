@@ -1,5 +1,4 @@
-
-.container{
+.wrapper_footer{
     max-width: 1170px;
     margin:auto;
 }
@@ -11,7 +10,7 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: #24262b;
+    background-color: var(--background-color);
     padding: 70px 0;
 }
 .footer-col{
@@ -53,7 +52,22 @@ ul{
     color: #ffffff;
     padding-left: 8px;
 }
-
+.social-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.credits{
+    font-size: 16px;
+    
+    align-content: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    
+    transition: all 0.3s ease;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{

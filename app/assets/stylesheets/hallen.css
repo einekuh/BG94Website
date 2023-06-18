@@ -1,0 +1,41 @@
+.wrapper_hallen{
+    width:100%;
+    display:grid;
+    grid-template-areas: "left headline right"
+                         "left dreiklang right"
+                         "left dreiklang_info right"
+                         "left neue_zeit right"
+                         "left neue_zeit_info right";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 500px 300px 500px 300px;
+    gap: 10px;
+    
+    
+}
+.headline{
+     grid-area: headline;   
+}
+.dreiklang{
+     display: grid;
+     grid-area: dreiklang;   
+     justify-content: center;
+     align-content: center;
+}
+
+.dreiklang_info{
+     grid-area: dreiklang_info;   
+
+}
+.neue_zeit{
+     display: grid;
+     grid-area: neue_zeit; 
+     justify-content: center;  
+     align-content: center;
+}
+.neue_zeit_info{
+     grid-area: neue_zeit_info;  
+
+}
+.a{
+     text-decoration: none;
+}

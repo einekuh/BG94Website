@@ -1,0 +1,30 @@
+.wrapper_ansprechpartner{
+    width:100%;
+    display:grid;
+    grid-template-areas: "left headline headline headline right"
+                         "left biden_img biden_img biden_img right"
+                         "left biden_info biden_info biden_info right"
+                         ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 300px ;
+    gap: 10px;
+    
+    
+}
+.headline{
+     grid-area: headline;   
+}
+.biden_img{
+     display: grid;
+     grid-area: biden_img;   
+     justify-content: center;
+     align-content: center;
+    
+}
+
+.biden_info{
+     grid-area: biden_info;
+     
+
+}
+

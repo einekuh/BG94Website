@@ -1,0 +1,39 @@
+.wrapper_trainingslager{
+    width:100%;
+    display:grid;
+    grid-template-areas: "left headline right"
+                         "left trainingslager_info right"
+                         "left trainingslager_2022 right"
+                         "left trainingslager_2022_info right";
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 500px 500px 300px;
+    gap: 10px;
+    
+    
+}
+.headline{
+     grid-area: headline;   
+}
+.trainingslager_info{
+     display: grid;
+     grid-area: trainingslager_info;   
+     justify-content: center;
+     align-content: center;
+}
+ 
+.trainingslager_2022{
+     display: grid;
+     grid-area: trainingslager_2022;   
+     justify-content: center;
+     align-content: center;
+}
+
+.trainingslager_2022_info{
+     grid-area: trainingslager_2022_info;   
+
+}
+.a{
+     text-decoration: none;
+}
+

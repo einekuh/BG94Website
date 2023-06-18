@@ -1,42 +1,78 @@
-.wrapper{
+.wrapper_teams{
     width:100%;
     display:grid;
-    grid-template-areas: "left  headline headline headline right"
-                         "left team1 team1 team1 right"
-                         "left team2 team2 team2 right"
-                         "left team3 team3 team3 right"
-                         "left team4 team4 team4 right"
-                         "left team5 team5 team5 right"
-                         "left team6 team6 team6 right";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 500px 500px 500px 500px 500px 500px;
-    gap: 10px;
+    grid-template-areas: "left headline right"
+                         "left u14_img right"
+                         "left u14_info right"
+                         "left u16_img right"
+                         "left u16_info right"
+                         "left u18_img right"
+                         "left u18_info right";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 500px 300px 500px 300px 500px 300px;
+    gap: 20px;
+    
     
 }
 .headline{
-     grid-area: headline;   
+     grid-area: headline;  
+     display: grid;  
+
 }
-.team1{
-     grid-area: team1;   
-     background-color: grey;
+.u14_img{
+     display: grid;
+     grid-area: u14_img;   
+     justify-content: center;
+     align-content: center;
 }
-.team2{
-     grid-area: team2;   
-      background-color: grey;
+
+.u14_info{
+     grid-area: u14_info; 
+     display: grid;  
+     justify-content: center;
+   
+
 }
-.team3{
-     grid-area: team3; 
-      background-color: grey;  
+.u16_img{
+     display: grid;
+     grid-area: u16_img;   
+     justify-content: center;
+     align-content: center;  
 }
-.team4{
-     grid-area: team4;  
-      background-color: grey; 
+
+.u16_info{
+     grid-area: u16_info; 
+     display: grid;  
+     justify-content: center;
+     
 }
-.team5{
-     grid-area: team5;
-      background-color: grey;   
+.u18_img{
+     display: grid;
+     grid-area: u18_img;   
+     justify-content: center;
+     align-content: center; 
 }
-.team6{
-     grid-area: team6;   
-      background-color: grey;
+
+.u18_info{
+     grid-area: u18_info;  
+     display: grid;  
+     justify-content: center;
+      
+}
+.btn {
+  background-color: #000000; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top:10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+
+}
+.btn:hover {
+    background: #262626;
 }

@@ -4,12 +4,6 @@ Rails.application.routes.draw do
   get 'training/trainingszeiten'
   get 'training/hallen'
   get 'training/ansprechpartner'
-  get 'teams/u12'
-  get 'teams/u14'
-  get 'teams/u16'
-  get 'teams/u18'
-  get 'teams/herren'
-  get 'teams/frauen'
   get 'home/teams'
   get 'home/sponsoren'
   root "home#index"

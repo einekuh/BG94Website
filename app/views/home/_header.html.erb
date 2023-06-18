@@ -1,5 +1,4 @@
 <nav>
-    
         <%= link_to image_tag("https://cdn.discordapp.com/attachments/1008444521106915370/1108065115439386715/BG94_Website-3-removebg-preview.png", size: "200x90"),  root_path, class:"logo" %>
         <input type="checkbox" id="toggle_button">
         <label for="toggle_button" class="toggle_button">
@@ -27,7 +26,7 @@
                     <li><%= link_to "Trainingslager", events_trainingslager_path, class:"a" %></li>
                 </ul>
             </li>
-            <li><a href="https://bg94-schwedt.fan12.de/" target="_blank">Shop</a></li>
+            <li><%= link_to "Shop", "https://bg94-schwedt.fan12.de/", :target => '_blank',class:"a" %></li>
             <li><%= link_to "Sponsoren", home_sponsoren_path, class:"a" %></li>
             <div class="social_media">
                 <%= link_to image_tag("https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png", size: "40x40"),  root_path%>
