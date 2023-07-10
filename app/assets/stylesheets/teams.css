@@ -1,50 +1,91 @@
 .wrapper_teams{
     width:100%;
     display:grid;
-    grid-template-areas: "left headline right"
-                         "left u14_img right"
-                         "left u14_info right"
+    grid-template-areas: 
+                         "left u5_img right"
+                         "left u5_info right"
+                         "left u8_img right"
+                         "left u8_info right"
+                         "left u12_img right"
+                         "left u12_info right"
                          "left u16_img right"
                          "left u16_info right"
                          "left u18_img right"
-                         "left u18_info right";
+                         "left u18_info right"
+                         "left herren_img right"
+                         "left herren_info right"
+                         "left frauen_img right"
+                         "left frauen_info right";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 100px 500px 300px 500px 300px 500px 300px;
-    gap: 20px;
-    
-    
-}
-.headline{
-     grid-area: headline;  
-     display: grid;  
+    grid-template-rows: 5fr 4fr 5fr 4fr 5fr 4fr 5fr 4fr 5fr 4fr 5fr 4fr 5fr 4fr;
 
+    gap: 100px;  
 }
-.u14_img{
+
+.u5_img{
      display: grid;
-     grid-area: u14_img;   
+     grid-area: u5_img;   
      justify-content: center;
      align-content: center;
 }
-
-.u14_info{
-     grid-area: u14_info; 
-     display: grid;  
+.u5_img img{
+     max-width: 100%;
+     height: auto;
+}
+.u5_info{
+     grid-area: u5_info; 
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
+     
+}
+.u8_img{
+     display: grid;
+     grid-area: u8_img;   
      justify-content: center;
-   
-
+     align-content: center;  
+}
+.u8_img img{
+     max-width: 100%;
+     height: auto;
+}
+.u8_info{
+     grid-area: u8_info; 
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
+}
+.u12_img{
+     display: grid;
+     grid-area: u12_img;   
+     justify-content: center;
+     align-content: center; 
+}
+.u12_img img{
+     max-width: 100%;
+     height: auto;
+}
+.u12_info{
+     grid-area: u12_info;  
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
 }
 .u16_img{
      display: grid;
      grid-area: u16_img;   
      justify-content: center;
-     align-content: center;  
+     align-content: center; 
 }
-
+.u16_img img{
+     max-width: 100%;
+     height: auto;
+}
 .u16_info{
-     grid-area: u16_info; 
-     display: grid;  
-     justify-content: center;
-     
+     grid-area: u16_info;  
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
 }
 .u18_img{
      display: grid;
@@ -52,27 +93,78 @@
      justify-content: center;
      align-content: center; 
 }
-
+.u18_img img{
+     max-width: 100%;
+     height: auto;
+}
 .u18_info{
      grid-area: u18_info;  
-     display: grid;  
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
+}
+.herren_img{
+     display: grid;
+     grid-area: herren_img;   
      justify-content: center;
+     align-content: center; 
+}
+.herren_img img{
+     max-width: 100%;
+     height: auto;
+}
+.herren_info{
+     grid-area: herren_info;  
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
+}
+.frauen_img{
+     display: grid;
+     grid-area: frauen_img;   
+     justify-content: center;
+     align-content: center; 
+}
+.frauen_img img{
+     max-width: 100%;
+     height: auto;
+}
+.frauen_info{
+     grid-area: frauen_info;  
+     font-size: 20px;
+     line-height: 40px;
+     display: grid;
       
 }
 .btn {
   background-color: #000000; 
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px;
   margin-top:10px;
   text-align: center;
   text-decoration: none;
   border-radius: 12px;
-  font-size: 16px;
   width: 200px;
   height: 50px;
+  font-size: 20px;
+
 
 }
 .btn:hover {
     background: #262626;
+}
+@media(max-width: 1400px){
+     .wrapper_teams{
+         grid-template-columns: 1fr 10fr 1fr;
+
+        
+}
+
+@media(max-width: 800px){
+     .wrapper_teams{
+         grid-template-columns: 1fr 10fr 1fr;
+         grid-template-rows: 4fr 8fr 4fr 8fr 4fr 8fr 4fr 8fr 4fr 8fr 4fr 8fr 4fr 8fr;
+
+        
 }

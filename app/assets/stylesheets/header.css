@@ -5,6 +5,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
+    font-size: 20px;
 
 }
 nav .logo{
@@ -33,7 +34,7 @@ nav ul{
 }
 nav li{
     height: 100%;
-    width: 150px;
+    width: 190px;
     text-align: center;
     position: relative;
 }
@@ -52,7 +53,7 @@ nav ul a{
 }
 .dropdown{
     height: min-content;
-    width: 220px;
+    width: 190px;
     background: var(--background-color);
 
     display: none;
@@ -68,7 +69,7 @@ nav ul a{
 }
 .dropdown li a{
     justify-content: flex-start;
-    padding-left: 30px;
+    padding-left: 20px;
     width: calc(100% - 30px);
 }
 nav li:hover .dropdown{
@@ -100,7 +101,40 @@ nav input[type="checkbox"]{
     background: white;
     border-radius: 100px;
 }
-@media(max-width: 850px){
+
+@media(max-width: 1650px){
+    nav li{
+    
+    width: 170px;
+    }
+}
+@media(max-width: 1500px){
+    nav li{
+    
+    width: 150px;
+    }
+}
+@media(max-width: 1400px){
+    nav li{
+    
+    width: 130px;
+    }
+}
+@media(max-width: 1250px){
+    nav li{
+    
+    width: 110px;
+    }
+}
+@media(max-width: 1150px){
+    nav li{
+    
+    width: 100px;
+}
+}
+
+
+@media(max-width: 1075px){
     .toggle_button{
         display: flex;
     }
@@ -113,6 +147,9 @@ nav input[type="checkbox"]{
         position: absolute;
         top: var(--navbar-height);
     }
+    .social_media{
+    display: none;
+}
     nav li{
         height: min-content;
         width: 100%;

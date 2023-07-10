@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get 'training/hallen'
   get 'training/ansprechpartner'
   get 'home/teams'
-  get 'home/sponsoren'
+  get 'home/partner'
+  get 'home/impressum'
   root "home#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -1,16 +1,15 @@
 .wrapper_hallen{
     width:100%;
     display:grid;
-    grid-template-areas: "left headline right"
-                         "left dreiklang right"
+    grid-template-areas: "left dreiklang right"
                          "left dreiklang_info right"
                          "left neue_zeit right"
-                         "left neue_zeit_info right";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 100px 500px 300px 500px 300px;
-    gap: 10px;
-    
-    
+                         "left neue_zeit_info right"
+                         "left külzviertel right"
+                         "left külzviertel_info right";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows:5fr 3fr 5fr 3fr 5fr 3fr;
+    gap: 10px;  
 }
 .headline{
      grid-area: headline;   
@@ -20,6 +19,10 @@
      grid-area: dreiklang;   
      justify-content: center;
      align-content: center;
+}
+.dreiklang img{
+     max-width: 100%;
+     height: auto;
 }
 
 .dreiklang_info{
@@ -32,10 +35,34 @@
      justify-content: center;  
      align-content: center;
 }
+.neue_zeit img{
+     max-width: 100%;
+     height: auto;
+}
 .neue_zeit_info{
      grid-area: neue_zeit_info;  
 
 }
+.külzviertel{
+     display: grid;
+     grid-area: külzviertel; 
+     justify-content: center;  
+     align-content: center;
+}
+.külzviertel img{
+     max-width: 100%;
+     height: auto;
+}
+.külzviertel_info{
+     grid-area: külzviertel_info;  
+
+}
 .a{
      text-decoration: none;
+}
+@media(max-width: 700px){
+     .wrapper_hallen{
+
+         grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ; 
+     }
 }

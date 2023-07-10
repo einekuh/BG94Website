@@ -2,9 +2,12 @@ class HomeController < ApplicationController
   def index
   end
   
-  def sponsoren
+  def partner
   end
 
   def teams
+  end
+
+   def impressum
   end
 end
